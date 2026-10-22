@@ -13,3 +13,7 @@ __pycache__/
 *.docx
 *.doc
 projects_extracted.json
+
+# Carpetas locales de insumos y agentes
+insumos/
+agente/
