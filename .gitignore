@@ -8,6 +8,8 @@ Thumbs.db
 __pycache__/
 *.pyc
 
-# Opcional: si prefieres no subir tus archivos fuente originales de Word/Excel al repositorio público:
-# *.xlsx
-# *.docx
+# Archivos personales y fuentes de datos locales (privados)
+*.xlsx
+*.docx
+*.doc
+projects_extracted.json
