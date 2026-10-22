@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', var(--font-sans);
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Palette: Oyster Silk & Warm Silver (Light Mode) */
+  --bg-primary: #FAF9F6;           /* Blanco Ostra perla cálido */
+  --bg-surface: #FFFFFF;           /* Superficie pura para tarjetas */
+  --bg-surface-elevated: #F3F2EE;  /* Superficie elevada / badges */
+  --text-primary: #1A1918;         /* Carbón suave profundo */
+  --text-secondary: #575550;       /* Grafito cálido */
+  --text-muted: #7D7A73;           /* Plata de piedra */
+  --border-subtle: #E8E6E0;        /* Borde plateado cálido sutil */
+  --border-strong: #C8C5BD;        /* Borde plateado satinado */
+  --accent-primary: #1A1918;       /* Botón principal negro carbón cálido */
+  --accent-primary-text: #FAF9F6;  /* Texto en botón */
+  --accent-primary-hover: #2E2D2A;
+  --accent-silver: #7D7A73;        /* Acento metálico plata cálida */
+  --accent-silver-light: #F3F2EE;  /* Fondo suave para badges */
+  --card-shadow: 0 4px 20px -2px rgba(26, 25, 24, 0.04), 0 2px 6px -1px rgba(26, 25, 24, 0.02);
+  --card-hover-shadow: 0 16px 28px -4px rgba(26, 25, 24, 0.08), 0 6px 12px -3px rgba(26, 25, 24, 0.03);
+}
+
+.dark {
+  /* Palette: Oyster Silk & Warm Silver (Dark Mode Inversion) */
+  --bg-primary: #11100F;           /* Carbón ostra abisal */
+  --bg-surface: #181716;           /* Superficie carbón ostra */
+  --bg-surface-elevated: #242220;  /* Superficie elevada nocturna */
+  --text-primary: #FAF9F6;         /* Blanco perla ostra */
+  --text-secondary: #B8B5AD;       /* Plata cálida luminosa */
+  --text-muted: #7D7A73;           /* Plata media */
+  --border-subtle: #292725;        /* Borde oscuro sutil */
+  --border-strong: #45423E;        /* Borde plata oscura satinada */
+  --accent-primary: #FAF9F6;       /* Botón principal blanco ostra */
+  --accent-primary-text: #11100F;  /* Texto en botón dark */
+  --accent-primary-hover: #EAE6DE;
+  --accent-silver: #B8B5AD;        /* Plata cálida */
+  --accent-silver-light: #242220;
+  --card-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --card-hover-shadow: 0 16px 28px -4px rgba(0, 0, 0, 0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Glassmorphism nav en Blanco Ostra / Perla */
+.glass-nav {
+  background: rgba(250, 249, 246, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: all 0.25s ease;
+}
+
+.dark .glass-nav {
+  background: rgba(17, 16, 15, 0.92);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+/* Custom cards - Acabado perlado con borde plateado cálido */
+.custom-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-hover-shadow);
+  border-color: var(--border-strong);
+}
+
+/* Badge con toque plateado satinado */
+.badge-tech {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--font-mono);
+  border-radius: 9999px;
+  background: var(--bg-surface-elevated);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-strong);
+}
+
+.dark .badge-tech {
+  background: var(--bg-surface-elevated);
+  border-color: var(--border-strong);
+  color: var(--text-secondary);
+}
+
+/* Botones principales: Acero Carbón en Light, Blanco Perla en Dark */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--accent-primary);
+  color: var(--accent-primary-text);
+  border: 1px solid var(--accent-primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.6rem;
+  font-weight: 600;
+  font-size: 0.92rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(26, 25, 24, 0.08);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-primary-hover);
+  border-color: var(--accent-primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(26, 25, 24, 0.15);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-strong);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.6rem;
+  font-weight: 500;
+  font-size: 0.92rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(26, 25, 24, 0.04);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface-elevated);
+  border-color: var(--text-muted);
+  transform: translateY(-1px);
+}
+
+/* Títulos con sutil degradado metálico plata */
+.text-gradient-silver {
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Timeline vertical */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.25rem;
+  width: 2px;
+  background: var(--border-subtle);
+}
+
+/* Modal backdrop blur */
+.modal-backdrop {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mí | Andrés Argumero · Applications Architect Expert</title>
+  <meta name="description" content="Perfil profesional, visión estratégica, certificaciones y competencias técnicas de Andrés Argumero.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#1A1918] dark:bg-[#11100F] dark:text-[#FAF9F6] min-h-screen flex flex-col antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-[#1A1918] text-[#FAF9F6] dark:bg-[#FAF9F6] dark:text-[#11100F] font-extrabold flex items-center justify-center text-sm tracking-wider shadow-sm border border-[#C8C5BD] dark:border-[#3E3C38] group-hover:scale-105 transition-transform">
+          AA
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-base tracking-tight text-[#1A1918] dark:text-[#FAF9F6] block">
+            Andrés Argumero
+          </span>
+          <span class="text-xs text-stone-500 font-medium block">
+            Applications Architect Expert
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Inicio</a>
+        <a href="sobre-mi.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Sobre Mí</a>
+        <a href="proyectos.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Portafolio</a>
+        <a href="trayectoria.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Trayectoria</a>
+        <a href="blog.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Artículos</a>
+        <a href="contacto.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Action items -->
+      <div class="flex items-center gap-3">
+        <button class="theme-toggle-btn p-2 rounded-lg text-stone-500 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] hover:bg-[#F3F2EE] dark:hover:bg-[#1E1D1B] transition-colors" title="Cambiar tema">
+          <svg class="theme-moon-icon w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg class="theme-sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+
+        <a href="contacto.html" class="hidden sm:inline-flex btn-primary text-xs py-2 px-4">
+          Agendar Consulta
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-[#F3F2EE] dark:hover:bg-[#1E1D1B]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-[#E8E6E0] dark:border-[#292725] bg-[#FAF9F6] dark:bg-[#11100F] px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Inicio</a>
+      <a href="sobre-mi.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Sobre Mí</a>
+      <a href="proyectos.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Portafolio</a>
+      <a href="trayectoria.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Trayectoria</a>
+      <a href="blog.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Artículos</a>
+      <a href="contacto.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Contacto</a>
+    </div>
+  </header>
+
+  <main class="flex-grow py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Encabezado de página -->
+      <div class="max-w-3xl mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-stone-500">Perfil Ejecutivo</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-[#1A1918] dark:text-[#FAF9F6] mt-2 mb-6">
+          Más de 15 años conectando la ingeniería profunda con la visión de negocio.
+        </h1>
+        <p class="text-lg text-stone-600 dark:text-stone-300 leading-relaxed">
+          Graduado como Ingeniero de Sistemas en 2010 y con una evolución sostenida a través de más de 80 iniciativas analíticas en Colombia y la región.
+        </p>
+      </div>
+
+      <!-- Narrativa Principal y Sidebar -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-20">
+        <div class="lg:col-span-8 space-y-6 text-stone-700 dark:text-stone-300 text-base leading-relaxed">
+          <p>
+            Durante los últimos quince años he acompañado a organizaciones de múltiples industrias —incluyendo <strong>Petróleo y Gas, Utilidades, Banca, Seguros, Telecomunicaciones, Retail y Farmacéutica</strong>— en la construcción y evolución de sus capacidades analíticas para la toma de decisiones.
+          </p>
+          <p>
+            Inicié mi carrera en el diseño y visualización de datos, crecí como ingeniero de datos estructurando complejos almacenes y pipelines en plataformas tradicionales (SAP HANA, BW, SQL Server), y posteriormente evolucioné hacia la <strong>arquitectura de datos cloud</strong> sobre Azure, AWS y GCP. Actualmente ejerzo como <strong>Applications Architect Expert en NTT Data Colombia</strong>.
+          </p>
+          <p>
+            Mis funciones actuales van más allá del diseño técnico estricto: participo activamente en todo el ciclo de vida de las soluciones, desde la identificación temprana de necesidades y estructuración de propuestas de preventa, hasta el aseguramiento del modelo SecDevOps, la gobernanza corporativa y la viabilidad económica en el tiempo.
+          </p>
+
+          <blockquote class="p-6 my-6 border-l-4 border-[#1A1918] dark:border-[#FAF9F6] bg-[#F3F2EE] dark:bg-[#1E1D1B] rounded-r-2xl italic text-[#1A1918] dark:text-[#FAF9F6] font-medium">
+            "Tras 15 años diseñando soluciones analíticas, he comprobado que el desafío principal ya no es únicamente tecnológico, sino estratégico: cómo convertir capacidades analíticas y modelos de IA en decisiones ágiles que forjen ventajas competitivas sostenibles."
+          </blockquote>
+
+          <p>
+            Mi objetivo constante es liderar iniciativas de modernización de alto calado —como la transición a <strong>Microsoft Fabric</strong> y la integración de <strong>agentes inteligentes (SmartOps)</strong>—, garantizando que cada línea de arquitectura se traduzca en retorno tangible y mitigación proactiva de riesgos.
+          </p>
+        </div>
+
+        <!-- Sidebar de Datos Clave -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="custom-card rounded-2xl p-7">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-4">Ficha Técnica</h3>
+            
+            <div class="space-y-4 text-sm">
+              <div>
+                <span class="text-xs text-stone-500 block">Posición Actual</span>
+                <span class="font-bold text-[#1A1918] dark:text-[#FAF9F6]">Applications Architect Expert</span>
+                <span class="text-xs text-stone-600 dark:text-stone-400 block font-medium">NTT Data Colombia</span>
+              </div>
+
+              <div>
+                <span class="text-xs text-stone-500 block">Educación Superior</span>
+                <span class="font-bold text-[#1A1918] dark:text-[#FAF9F6]">Ingeniero de Sistemas</span>
+                <span class="text-xs text-stone-500 block">Egresado 2010</span>
+              </div>
+
+              <div>
+                <span class="text-xs text-stone-500 block">Posgrado / Candidatura</span>
+                <span class="font-bold text-[#1A1918] dark:text-[#FAF9F6]">Maestría en Universidad de los Andes</span>
+                <span class="text-xs text-stone-500 block">Enfoque en Estrategia & Decisión</span>
+              </div>
+
+              <div>
+                <span class="text-xs text-stone-500 block">Industrias de Especialidad</span>
+                <p class="text-xs text-stone-600 dark:text-stone-400 mt-1 leading-normal font-medium">
+                  Oil & Gas, Utilities, Telco, Banca, Seguros, Retail, Farma.
+                </p>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-[#E8E6E0] dark:border-[#292725]">
+              <a href="contacto.html" class="btn-primary w-full text-xs py-3">
+                Iniciar Conversación
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dominios Técnicos & Competencias -->
+      <div class="mb-20">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-stone-500">Competencias</span>
+          <h2 class="text-3xl font-display font-extrabold text-[#1A1918] dark:text-[#FAF9F6] mt-1">Ecosistema Tecnológico & Áreas de Dominio</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="custom-card rounded-2xl p-7">
+            <h3 class="text-base font-bold text-[#1A1918] dark:text-[#FAF9F6] mb-3 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-[#1A1918] dark:bg-[#FAF9F6]"></span>
+              Plataformas Cloud & Fabric
+            </h3>
+            <ul class="space-y-2 text-xs text-stone-600 dark:text-stone-400 font-mono">
+              <li>• Microsoft Fabric & OneLake</li>
+              <li>• Azure Databricks</li>
+              <li>• Azure Synapse Analytics</li>
+              <li>• Azure Data Factory / Gen2</li>
+              <li>• Google Cloud Big Data</li>
+            </ul>
+          </div>
+
+          <div class="custom-card rounded-2xl p-7">
+            <h3 class="text-base font-bold text-[#1A1918] dark:text-[#FAF9F6] mb-3 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-stone-500"></span>
+              Ingeniería & Virtualización
+            </h3>
+            <ul class="space-y-2 text-xs text-stone-600 dark:text-stone-400 font-mono">
+              <li>• Delta Lake (Medallion: Bronze/Silver/Gold)</li>
+              <li>• Denodo Data Virtualization</li>
+              <li>• Python / PySpark</li>
+              <li>• SQL Avanzado & T-SQL</li>
+              <li>• SAP HANA & Business Warehouse</li>
+            </ul>
+          </div>
+
+          <div class="custom-card rounded-2xl p-7">
+            <h3 class="text-base font-bold text-[#1A1918] dark:text-[#FAF9F6] mb-3 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-stone-400"></span>
+              IA & Analítica Avanzada
+            </h3>
+            <ul class="space-y-2 text-xs text-stone-600 dark:text-stone-400 font-mono">
+              <li>• SmartOps & Agentes Autónomos</li>
+              <li>• Modelos Semánticos DAX</li>
+              <li>• Machine Learning Aplicado</li>
+              <li>• DS4A (Correlation One / MinTIC)</li>
+              <li>• Power BI Enterprise Modeling</li>
+            </ul>
+          </div>
+
+          <div class="custom-card rounded-2xl p-7">
+            <h3 class="text-base font-bold text-[#1A1918] dark:text-[#FAF9F6] mb-3 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-stone-600"></span>
+              Gobernanza & Arquitectura
+            </h3>
+            <ul class="space-y-2 text-xs text-stone-600 dark:text-stone-400 font-mono">
+              <li>• Modelo SecDevOps en Datos</li>
+              <li>• Mitigación Proactiva de Riesgos</li>
+              <li>• Decomisionamiento & Migraciones</li>
+              <li>• Calidad de Datos & Cliente 360</li>
+              <li>• Arquitectura Empresarial S/4HANA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificaciones Oficiales -->
+      <div class="mb-12">
+        <div class="max-w-2xl mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-stone-500">Credenciales Verificadas</span>
+          <h2 class="text-3xl font-display font-extrabold text-[#1A1918] dark:text-[#FAF9F6] mt-1">Certificaciones Oficiales</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#1C1B19] border border-[#E8E6E0] dark:border-[#2E2C29] shadow-sm flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              MS
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6]">Microsoft Certified: Azure Data Engineer Associate</h4>
+              <p class="text-xs text-stone-500 mt-1">Diseño y desarrollo de pipelines, lagos de datos y almacenes analíticos.</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#1C1B19] border border-[#E8E6E0] dark:border-[#2E2C29] shadow-sm flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              MS
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6]">Microsoft Certified: Azure AI Fundamentals</h4>
+              <p class="text-xs text-stone-500 mt-1">Conceptos de machine learning, visión computacional, NLP e IA generativa en Azure.</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#1C1B19] border border-[#E8E6E0] dark:border-[#2E2C29] shadow-sm flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              MS
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6]">Microsoft Certified: Azure Data Fundamentals</h4>
+              <p class="text-xs text-stone-500 mt-1">Fundamentos de datos relacionales, no relacionales y analítica en la nube.</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#1C1B19] border border-[#E8E6E0] dark:border-[#2E2C29] shadow-sm flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              C1
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6]">Data Science for All (DS4A)</h4>
+              <p class="text-xs text-stone-500 mt-1">Correlation One & MinTIC. Formación intensiva en ciencia de datos y analítica aplicada.</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#1C1B19] border border-[#E8E6E0] dark:border-[#2E2C29] shadow-sm flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              GCP
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6]">Google Cloud Big Data & ML Fundamentals</h4>
+              <p class="text-xs text-stone-500 mt-1">BigQuery, Cloud Storage y procesamiento distribuido en GCP.</p>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white dark:bg-[#1C1B19] border border-[#E8E6E0] dark:border-[#2E2C29] shadow-sm flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex-shrink-0 flex items-center justify-center font-bold text-xs">
+              SAP
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6]">SAP Certified Application Associate</h4>
+              <p class="text-xs text-stone-500 mt-1">SAP BusinessObjects Web Intelligence 4.0 para reporting empresarial.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-[#0E0D0C] border-t border-[#E8E6E0] dark:border-[#292725] py-12 text-sm mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+        <p>&copy; 2026 Andrés Argumero. Applications Architect Expert.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="proyectos.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Ver Portafolio</a>
+          <a href="trayectoria.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Ver Trayectoria</a>
+          <a href="contacto.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

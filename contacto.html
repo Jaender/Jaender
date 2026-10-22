@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto & Asesorías | Andrés Argumero · Applications Architect</title>
+  <meta name="description" content="Canales de contacto directo para consultoría estratégica, oportunidades de liderazgo técnico y conferencias con Andrés Argumero.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#1A1918] dark:bg-[#11100F] dark:text-[#FAF9F6] min-h-screen flex flex-col antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-[#1A1918] text-[#FAF9F6] dark:bg-[#FAF9F6] dark:text-[#11100F] font-extrabold flex items-center justify-center text-sm tracking-wider shadow-sm border border-[#C8C5BD] dark:border-[#3E3C38] group-hover:scale-105 transition-transform">
+          AA
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-base tracking-tight text-[#1A1918] dark:text-[#FAF9F6] block">
+            Andrés Argumero
+          </span>
+          <span class="text-xs text-stone-500 font-medium block">
+            Applications Architect Expert
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Inicio</a>
+        <a href="sobre-mi.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Sobre Mí</a>
+        <a href="proyectos.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Portafolio</a>
+        <a href="trayectoria.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Trayectoria</a>
+        <a href="blog.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Artículos</a>
+        <a href="contacto.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Action items -->
+      <div class="flex items-center gap-3">
+        <button class="theme-toggle-btn p-2 rounded-lg text-stone-500 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] hover:bg-[#F3F2EE] dark:hover:bg-[#1E1D1B] transition-colors" title="Cambiar tema">
+          <svg class="theme-moon-icon w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg class="theme-sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+
+        <a href="contacto.html" class="hidden sm:inline-flex btn-primary text-xs py-2 px-4">
+          Agendar Consulta
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-[#F3F2EE] dark:hover:bg-[#1E1D1B]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-[#E8E6E0] dark:border-[#292725] bg-[#FAF9F6] dark:bg-[#11100F] px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Inicio</a>
+      <a href="sobre-mi.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Sobre Mí</a>
+      <a href="proyectos.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Portafolio</a>
+      <a href="trayectoria.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Trayectoria</a>
+      <a href="blog.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Artículos</a>
+      <a href="contacto.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Contacto</a>
+    </div>
+  </header>
+
+  <main class="flex-grow py-12 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Encabezado -->
+      <div class="max-w-3xl mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-stone-500">Canales Directos</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-[#1A1918] dark:text-[#FAF9F6] mt-2 mb-4">
+          Iniciemos una Conversación
+        </h1>
+        <p class="text-base sm:text-lg text-stone-600 dark:text-stone-300 leading-relaxed">
+          Ya sea para explorar una oportunidad de liderazgo técnico, asesorar a tu organización en la modernización hacia Microsoft Fabric o debatir sobre arquitecturas complejas de datos e IA.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Formulario Interactivo -->
+        <div class="lg:col-span-7">
+          <div class="custom-card rounded-2xl p-8 sm:p-10">
+            <h2 class="text-xl font-bold text-[#1A1918] dark:text-[#FAF9F6] mb-2">Enviar un Mensaje</h2>
+            <p class="text-xs text-stone-500 mb-8">
+              Completa el formulario y responderé en un plazo máximo de 24 horas hábiles.
+            </p>
+
+            <form id="contact-form" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 mb-2">Nombre Completo *</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    required 
+                    placeholder="Ej. Juan Pérez"
+                    class="w-full px-4 py-3.5 bg-[#FAF9F6] dark:bg-[#201F1D] border border-[#E8E6E0] dark:border-[#3E3C38] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#1A1918] dark:focus:ring-[#FAF9F6] text-[#1A1918] dark:text-[#FAF9F6] placeholder-stone-400"
+                  >
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 mb-2">Correo Electrónico *</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    required 
+                    placeholder="juan@empresa.com"
+                    class="w-full px-4 py-3.5 bg-[#FAF9F6] dark:bg-[#201F1D] border border-[#E8E6E0] dark:border-[#3E3C38] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#1A1918] dark:focus:ring-[#FAF9F6] text-[#1A1918] dark:text-[#FAF9F6] placeholder-stone-400"
+                  >
+                </div>
+              </div>
+
+              <div>
+                <label for="subject" class="block text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 mb-2">Motivo de Contacto *</label>
+                <select 
+                  id="subject" 
+                  required
+                  class="w-full px-4 py-3.5 bg-[#FAF9F6] dark:bg-[#201F1D] border border-[#E8E6E0] dark:border-[#3E3C38] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#1A1918] dark:focus:ring-[#FAF9F6] text-[#1A1918] dark:text-[#FAF9F6]"
+                >
+                  <option value="">Selecciona una opción...</option>
+                  <option value="liderazgo">Oportunidad Laboral / Rol de Liderazgo Senior</option>
+                  <option value="asesoria">Consultoría o Asesoría Estratégica en Datos</option>
+                  <option value="fabric">Migración o Modernización a Microsoft Fabric</option>
+                  <option value="conferencia">Conferencia, Charla Técnica o Divulgación</option>
+                  <option value="otro">Otro motivo</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 mb-2">Mensaje o Detalle del Reto *</label>
+                <textarea 
+                  id="message" 
+                  rows="5" 
+                  required
+                  placeholder="Cuéntame sobre el contexto de tu organización, los objetivos o el tipo de colaboración que buscas..."
+                  class="w-full px-4 py-3.5 bg-[#FAF9F6] dark:bg-[#201F1D] border border-[#E8E6E0] dark:border-[#3E3C38] rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-[#1A1918] dark:focus:ring-[#FAF9F6] text-[#1A1918] dark:text-[#FAF9F6] resize-none placeholder-stone-400"
+                ></textarea>
+              </div>
+
+              <button type="submit" id="submit-btn" class="btn-primary w-full py-4 text-sm">
+                <span>Enviar Mensaje</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Información Lateral y Vías Alternativas -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Tarjeta de canales directos -->
+          <div class="custom-card rounded-2xl p-8 space-y-6">
+            <h3 class="text-base font-bold text-[#1A1918] dark:text-[#FAF9F6]">Canales Directos</h3>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
+                </div>
+                <div>
+                  <span class="text-xs text-stone-400 block font-medium uppercase tracking-wider">Correo Electrónico</span>
+                  <a href="mailto:andres.argumero@example.com" class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6] hover:underline">
+                    andres.argumero@example.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div>
+                  <span class="text-xs text-stone-400 block font-medium uppercase tracking-wider">Red Profesional</span>
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6] hover:underline">
+                    LinkedIn / Andrés Argumero
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#3E3C38] text-[#1A1918] dark:text-[#FAF9F6] flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <div>
+                  <span class="text-xs text-stone-400 block font-medium uppercase tracking-wider">Ubicación & Modalidad</span>
+                  <span class="text-sm font-bold text-[#1A1918] dark:text-[#FAF9F6] block">Bogotá, Colombia</span>
+                  <span class="text-xs text-stone-500">Disponible para proyectos remotos a nivel global</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Disponibilidad -->
+          <div class="bg-[#1A1918] dark:bg-[#181716] text-[#FAF9F6] rounded-2xl p-8 border border-[#3E3C38] shadow-lg">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2A2825] text-stone-300 text-xs font-semibold mb-4 border border-[#45423E]">
+              <span class="w-2 h-2 rounded-full bg-stone-400 animate-pulse"></span>
+              Agenda Abierta
+            </div>
+            <h3 class="text-lg font-bold mb-2">Sesión de Exploración Inicial</h3>
+            <p class="text-xs text-stone-300 leading-relaxed mb-6">
+              ¿Requieres una segunda opinión sobre la hoja de ruta de datos de tu compañía o la factibilidad de una migración a Fabric? Agendemos una videollamada de 30 minutos sin compromiso.
+            </p>
+            <a href="mailto:andres.argumero@example.com?subject=Solicitud%20de%20Reunion%20Exploratoria" class="btn-primary w-full text-xs py-3.5 bg-[#FAF9F6] text-[#1A1918] hover:bg-[#F3F2EE] border-none font-bold">
+              Solicitar Reunión Virtual
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-[#0E0D0C] border-t border-[#E8E6E0] dark:border-[#292725] py-12 text-sm mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+        <p>&copy; 2026 Andrés Argumero. Applications Architect Expert.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="index.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Inicio</a>
+          <a href="proyectos.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Portafolio</a>
+          <a href="trayectoria.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Trayectoria</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      showToast(`¡Gracias ${name}! Tu mensaje ha sido enviado correctamente.`);
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trayectoria Profesional | Andrés Argumero · Applications Architect</title>
+  <meta name="description" content="Línea de tiempo profesional, evolución de roles en NTT Data y consultoría, formación académica y certificaciones de Andrés Argumero.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#FAF9F6] text-[#1A1918] dark:bg-[#11100F] dark:text-[#FAF9F6] min-h-screen flex flex-col antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-xl bg-[#1A1918] text-[#FAF9F6] dark:bg-[#FAF9F6] dark:text-[#11100F] font-extrabold flex items-center justify-center text-sm tracking-wider shadow-sm border border-[#C8C5BD] dark:border-[#3E3C38] group-hover:scale-105 transition-transform">
+          AA
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-base tracking-tight text-[#1A1918] dark:text-[#FAF9F6] block">
+            Andrés Argumero
+          </span>
+          <span class="text-xs text-stone-500 font-medium block">
+            Applications Architect Expert
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Inicio</a>
+        <a href="sobre-mi.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Sobre Mí</a>
+        <a href="proyectos.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Portafolio</a>
+        <a href="trayectoria.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Trayectoria</a>
+        <a href="blog.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Artículos</a>
+        <a href="contacto.html" class="nav-link text-stone-600 dark:text-stone-300 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] transition-colors">Contacto</a>
+      </nav>
+
+      <!-- Action items -->
+      <div class="flex items-center gap-3">
+        <button class="theme-toggle-btn p-2 rounded-lg text-stone-500 hover:text-[#1A1918] dark:hover:text-[#FAF9F6] hover:bg-[#F3F2EE] dark:hover:bg-[#1E1D1B] transition-colors" title="Cambiar tema">
+          <svg class="theme-moon-icon w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          <svg class="theme-sun-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        </button>
+
+        <a href="contacto.html" class="hidden sm:inline-flex btn-primary text-xs py-2 px-4">
+          Agendar Consulta
+        </a>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-[#F3F2EE] dark:hover:bg-[#1E1D1B]">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-[#E8E6E0] dark:border-[#292725] bg-[#FAF9F6] dark:bg-[#11100F] px-4 pt-2 pb-6 space-y-3">
+      <a href="index.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Inicio</a>
+      <a href="sobre-mi.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Sobre Mí</a>
+      <a href="proyectos.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Portafolio</a>
+      <a href="trayectoria.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Trayectoria</a>
+      <a href="blog.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Artículos</a>
+      <a href="contacto.html" class="block py-2 text-base font-medium text-stone-700 dark:text-stone-200">Contacto</a>
+    </div>
+  </header>
+
+  <main class="flex-grow py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Encabezado con acción de descarga -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-8 border-b border-[#E8E6E0] dark:border-[#292725]">
+        <div class="max-w-2xl">
+          <span class="text-xs font-bold uppercase tracking-widest text-stone-500">Trayectoria Longitudinal</span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-[#1A1918] dark:text-[#FAF9F6] mt-2 mb-4">
+            Evolución Profesional & Hitos
+          </h1>
+          <p class="text-stone-600 dark:text-stone-300 text-sm md:text-base leading-relaxed">
+            Una mirada retrospectiva a 15 años de carrera continua, transitando desde la especialización en Business Intelligence hasta el liderazgo en arquitectura analítica empresarial.
+          </p>
+        </div>
+
+        <div class="mt-6 md:mt-0">
+          <button onclick="window.print()" class="btn-secondary text-xs px-5 py-3">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            <span>Imprimir / Guardar CV como PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Línea de Tiempo Profesional -->
+      <div class="max-w-4xl mx-auto relative pl-8 md:pl-12 border-l-2 border-[#E8E6E0] dark:border-[#292725] space-y-12 mb-24">
+        
+        <!-- Hito 1: NTT Data Applications Architect Expert -->
+        <div class="relative group">
+          <div class="absolute -left-[41px] md:-left-[57px] top-1.5 w-5 h-5 rounded-full bg-[#1A1918] dark:bg-[#FAF9F6] border-4 border-[#FAF9F6] dark:border-[#11100F] shadow-sm"></div>
+
+          <div class="custom-card rounded-2xl p-8">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300 bg-[#F3F2EE] dark:bg-[#242220] border border-[#C8C5BD] dark:border-[#45423E] px-3 py-1 rounded-full">
+                Septiembre 2022 – Actualidad
+              </span>
+              <span class="text-xs text-stone-500 font-mono">Bogotá, Colombia</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-[#1A1918] dark:text-[#FAF9F6]">Applications Architect Expert</h2>
+            <h3 class="text-base font-semibold text-stone-600 dark:text-stone-300 mt-1 mb-4">NTT Data Colombia</h3>
+
+            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+              Liderazgo estratégico y técnico de la arquitectura de soluciones analíticas empresariales. Responsable de la selección de componentes tecnológicos, evaluación de riesgos arquitectónicos y garantía de sostenibilidad en el tiempo.
+            </p>
+
+            <div class="space-y-2.5 text-xs text-stone-700 dark:text-stone-300">
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Diseño y evolución de la arquitectura de aplicaciones críticas en clientes corporativos (CENIT, Ecopetrol, AXA Colpatria, TIGO, PRIME).</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Definición e implementación del modelo de trabajo del ciclo de vida del software con enfoque SecDevOps.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Alineación técnica con partners estratégicos de cloud (Microsoft, Databricks, SAP).</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Liderazgo de preventa técnica y estructuración de propuestas de migración hacia Microsoft Fabric.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-[#E8E6E0] dark:border-[#292725]">
+              <span class="badge-tech">Microsoft Fabric</span>
+              <span class="badge-tech">Azure Databricks</span>
+              <span class="badge-tech">SecDevOps</span>
+              <span class="badge-tech">Data Governance</span>
+              <span class="badge-tech">Enterprise Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 2: NTT Data Expert Engineer -->
+        <div class="relative group">
+          <div class="absolute -left-[41px] md:-left-[57px] top-1.5 w-5 h-5 rounded-full bg-stone-400 dark:bg-stone-600 border-4 border-[#FAF9F6] dark:border-[#11100F]"></div>
+
+          <div class="custom-card rounded-2xl p-8">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 bg-[#F3F2EE] dark:bg-[#201F1D] px-3 py-1 rounded-full">
+                Septiembre 2020 – Septiembre 2022
+              </span>
+              <span class="text-xs text-stone-500 font-mono">Bogotá, Colombia</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-[#1A1918] dark:text-[#FAF9F6]">Expert Engineer</h2>
+            <h3 class="text-base font-semibold text-stone-600 dark:text-stone-300 mt-1 mb-4">NTT Data Colombia</h3>
+
+            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+              Ingeniería profunda en construcción de pipelines de ingesta, clasificación de cargas full e incrementales (Delta), y transformación de datos en entornos Azure.
+            </p>
+
+            <div class="space-y-2.5 text-xs text-stone-700 dark:text-stone-300">
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Diseño y construcción de Azure Databricks para transformación y paso de zona de datos crudos (Raw) a refinados.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Carga de datos refinados en tablas de hechos y dimensiones en Azure Synapse Analytics.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Automatización end-to-end de pipelines analíticos con Azure Data Factory.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-[#E8E6E0] dark:border-[#292725]">
+              <span class="badge-tech">Azure Databricks</span>
+              <span class="badge-tech">Synapse Analytics</span>
+              <span class="badge-tech">Data Factory</span>
+              <span class="badge-tech">Delta Parquet</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 3: On Business Consulting -->
+        <div class="relative group">
+          <div class="absolute -left-[41px] md:-left-[57px] top-1.5 w-5 h-5 rounded-full bg-stone-400 dark:bg-stone-600 border-4 border-[#FAF9F6] dark:border-[#11100F]"></div>
+
+          <div class="custom-card rounded-2xl p-8">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 bg-[#F3F2EE] dark:bg-[#201F1D] px-3 py-1 rounded-full">
+                Noviembre 2013 – Septiembre 2020 (7 años)
+              </span>
+              <span class="text-xs text-stone-500 font-mono">Bogotá, Colombia</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-[#1A1918] dark:text-[#FAF9F6]">Leader Business Analytics</h2>
+            <h3 class="text-base font-semibold text-stone-600 dark:text-stone-300 mt-1 mb-4">On Business Consulting</h3>
+
+            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+              Liderazgo de equipos multidisciplinarios de inteligencia de negocios. Consultor líder en modelamiento de Datamarts en SAP HANA, integración con SAP Business Warehouse y despliegue de soluciones para soporte decisional directivo.
+            </p>
+
+            <div class="space-y-2.5 text-xs text-stone-700 dark:text-stone-300">
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Arquitectura y modelamiento de bodegas de datos en SAP BW y SAP HANA.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Líder en implementación de SAP Disclosure Management.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-stone-400 font-bold">•</span>
+                <span>Levantamiento de requerimientos, diseño de cubos, BEx Querys y dashboards ejecutivos en Web Intelligence y Lumira.</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6 pt-4 border-t border-[#E8E6E0] dark:border-[#292725]">
+              <span class="badge-tech">SAP HANA</span>
+              <span class="badge-tech">SAP BW</span>
+              <span class="badge-tech">Business Intelligence</span>
+              <span class="badge-tech">Data Modeling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hito 4: Inicios profesionales -->
+        <div class="relative group">
+          <div class="absolute -left-[41px] md:-left-[57px] top-1.5 w-5 h-5 rounded-full bg-stone-300 dark:bg-stone-700 border-4 border-[#FAF9F6] dark:border-[#11100F]"></div>
+
+          <div class="custom-card rounded-2xl p-8">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-stone-600 dark:text-stone-400 bg-[#F3F2EE] dark:bg-[#201F1D] px-3 py-1 rounded-full">
+                2011 – 2013
+              </span>
+              <span class="text-xs text-stone-500 font-mono">Bogotá, Colombia</span>
+            </div>
+
+            <h2 class="text-xl font-bold text-[#1A1918] dark:text-[#FAF9F6]">Consultor Senior de BI & Consultor SAP Funcional</h2>
+            <h3 class="text-sm font-semibold text-stone-600 dark:text-stone-300 mt-1 mb-3">Abits Colombia · Penitus Global Solutions (PGS)</h3>
+
+            <p class="text-xs text-stone-600 dark:text-stone-400 leading-relaxed">
+              Consolidación de las bases en sistemas de información empresariales, parametrización SAP y reportería analítica orientada a finanzas y operaciones.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sección de Formación Académica -->
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-stone-500">Educación & Posgrados</span>
+          <h2 class="text-3xl font-display font-extrabold text-[#1A1918] dark:text-[#FAF9F6] mt-1">Formación Académica</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="custom-card rounded-2xl p-7">
+            <div class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-2">Posgrado / Candidatura</div>
+            <h3 class="text-lg font-bold text-[#1A1918] dark:text-[#FAF9F6]">Universidad de los Andes</h3>
+            <p class="text-xs font-semibold text-stone-600 dark:text-stone-400 mt-1 mb-3">Enfoque en Liderazgo Estratégico y Toma de Decisiones de Alto Impacto</p>
+            <p class="text-xs text-stone-500 leading-relaxed">
+              Profundización en modelos para convertir capacidades analíticas y de IA en ventajas competitivas regionales y transformación de modelos de negocio.
+            </p>
+          </div>
+
+          <div class="custom-card rounded-2xl p-7">
+            <div class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-2">Pregrado Profesional</div>
+            <h3 class="text-lg font-bold text-[#1A1918] dark:text-[#FAF9F6]">Ingeniería de Sistemas</h3>
+            <p class="text-xs font-semibold text-stone-600 dark:text-stone-400 mt-1 mb-3">Graduado en 2010</p>
+            <p class="text-xs text-stone-500 leading-relaxed">
+              Formación rigurosa en ingeniería de software, arquitectura computacional, estructuras de datos y modelado de bases de datos relacionales y distribuidas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-[#0E0D0C] border-t border-[#E8E6E0] dark:border-[#292725] py-12 text-sm mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500">
+        <p>&copy; 2026 Andrés Argumero. Applications Architect Expert.</p>
+        <div class="flex gap-6 mt-4 sm:mt-0">
+          <a href="index.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Inicio</a>
+          <a href="proyectos.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Portafolio</a>
+          <a href="contacto.html" class="hover:text-[#1A1918] dark:hover:text-[#FAF9F6]">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

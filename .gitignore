@@ -1,0 +1,13 @@
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archivos de entorno y cache
+__pycache__/
+*.pyc
+
+# Opcional: si prefieres no subir tus archivos fuente originales de Word/Excel al repositorio público:
+# *.xlsx
+# *.docx
